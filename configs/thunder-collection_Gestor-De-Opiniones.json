@@ -1,0 +1,262 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Gestor-De-Opiniones",
+    "dateExported": "2025-02-17T05:10:15.487Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "98350e64-29c2-4d1e-a7d3-92673c43d049",
+            "name": "Users",
+            "containerId": "",
+            "created": "2025-02-18T19:40:39.832Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a2e4ac06-acab-4a34-918f-f0fe0a363e2f",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2025-02-18T19:40:39.833Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "ecdd22f9-71c0-499d-8cdf-2901523fcdf2",
+            "name": "Publications",
+            "containerId": "",
+            "created": "2025-02-18T19:40:39.834Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "10e76b00-1526-4e55-a5d1-7d723136841c",
+            "name": "Edit-Comment",
+            "containerId": "",
+            "created": "2025-02-18T19:41:36.683Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "fec91a09-4f66-4f56-bf9f-d9296fdddce6",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "98350e64-29c2-4d1e-a7d3-92673c43d049",
+            "name": "Register",
+            "url": "http://localhost:3000/opinionmanager/v1/user/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-18T19:45:39.833Z",
+            "modified": "2025-02-18T20:02:46.513Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"asanchez\",\n  \"mail\": \"asanchez@kinal.edu.gt\",\n  \"password\": \"kinal$2024$$\",\n  \"firstname\": \"Anderson\",\n  \"lastname\": \"Sanchez\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1bc0201b-a0be-4692-af1d-7a0fe982ed27",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "98350e64-29c2-4d1e-a7d3-92673c43d049",
+            "name": "Edit-Profile",
+            "url": "http://localhost:3000/opinionmanager/v1/user/",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2025-02-18T19:46:39.835Z",
+            "modified": "2025-02-18T20:02:39.835Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwYmEwNWY2YzdjMGFiYjAwODJkMzciLCJpYXQiOjE3MDkyNjA3MTIsImV4cCI6MTcwOTI2NDMxMn0.ii_3ueF_5wOWbeR17HqKld_MBpQPHoWVjOVex7PClT0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"a\",\n  \"password\": \"mypasword!\",\n  \"firstname\": \"a\",\n  \"lastname\": \"a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e73bfb6f-ad31-4c20-a6fb-44d68a3611f5",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "a2e4ac06-acab-4a34-918f-f0fe0a363e2f",
+            "name": "Login",
+            "url": "http://localhost:3000/opinionmanager/v1/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-02-18T19:48:39.834Z",
+            "modified": "2025-02-18T20:02:06.029Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"identifier\": \"arodriguez\",\n  \"password\": \"kinal$2024$$\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5604cb5-9fe2-4d52-b3f6-e1b79270a69d",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "ecdd22f9-71c0-499d-8cdf-2901523fcdf2",
+            "name": "Create-Publication",
+            "url": "http://localhost:3000/opinionmanager/v1/posts/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-02-18T19:50:39.836Z",
+            "modified": "2025-02-18T20:03:10.791Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTMyNjI3Mjg0ZmYxMGViNjFjNzEiLCJpYXQiOjE3MDk1Mjc5MDUsImV4cCI6MTcwOTUzMTUwNX0.lSRYo1iJmN8eFxTUvBAb7Gq_VwLHolyQ1GMxOGGMo9k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Anime del año 2023\",\n  \"category\": \"Anime\",\n  \"text\": \"Cyberpunk edgerunners es consagrado como el anime del año 2023\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e85ec99c-5eee-43c3-a19e-4274317381fd",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "ecdd22f9-71c0-499d-8cdf-2901523fcdf2",
+            "name": "Edit-Publication",
+            "url": "http://localhost:3000/opinionmanager/v1/posts/65e1eb04e3a5cf92f5c12c6d",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2025-02-18T19:52:39.837Z",
+            "modified": "2025-02-18T20:05:17.558Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2NiYzdiMDI0ZmViNmQzMWMzYzciLCJpYXQiOjE3MDk1MjcwMzAsImV4cCI6MTcwOTUzMDYzMH0.BNMCcriwCVh2xiseOwhvTt_1-aDH3PeNI0UqjG8KRoE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Titulo\",\n  \"category\": \"Categoria\",\n  \"text\": \"Descripcion\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "000d5c4b-63ab-44a6-92c8-a8529a95d2c5",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "ecdd22f9-71c0-499d-8cdf-2901523fcdf2",
+            "name": "Delete-Post",
+            "url": "http://localhost:3000/opinionmanager/v1/posts/65e1da31e9703730776bb23f",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2025-02-18T19:54:39.838Z",
+            "modified": "2025-02-18T20:07:01.848Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2NiYzdiMDI0ZmViNmQzMWMzYzciLCJpYXQiOjE3MDk1MjcwMzAsImV4cCI6MTcwOTUzMDYzMH0.BNMCcriwCVh2xiseOwhvTt_1-aDH3PeNI0UqjG8KRoE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c2670057-51a8-4687-a3ff-651b6722c0ac",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "ecdd22f9-71c0-499d-8cdf-2901523fcdf2",
+            "name": "Feed",
+            "url": "http://localhost:3000/opinionmanager/v1/posts/",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2025-02-18T19:55:39.839Z",
+            "modified": "2025-02-18T20:08:00.878Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a0d57738-f88d-43fb-8bd2-a1ee3d11f6c1",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "10e76b00-1526-4e55-a5d1-7d723136841c",
+            "name": "Create-Comment",
+            "url": "http://localhost:3000/opinionmanager/v1/comments/65e5551e27284ff10eb61c7a",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2025-02-18T19:57:05.425Z",
+            "modified": "2025-02-18T20:10:13.234Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTMwNTI3Mjg0ZmYxMGViNjFjNmQiLCJpYXQiOjE3MDk1MjgxMDYsImV4cCI6MTcwOTUzMTcwNn0.zj285AEW9YV3l-JdeLy3aJ0z43jq_pcPd37fomZ7exg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"Mi personaje favorito era david y el episodio que mas me gusto fue el capitulo 4\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d7ef6bcb-3a09-4d50-ad22-d60f4ba169f8",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "ecdd22f9-71c0-499d-8cdf-2901523fcdf2",
+            "name": "Post-Details",
+            "url": "http://localhost:3000/opinionmanager/v1/posts/65e5551e27284ff10eb61c7a",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2025-02-18T19:58:10.904Z",
+            "modified": "2025-02-18T20:12:18.999Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf92755d-1de5-4acd-8f02-e97c13e6b5aa",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "10e76b00-1526-4e55-a5d1-7d723136841c",
+            "name": "Delete-Comment",
+            "url": "http://localhost:3000/opinionmanager/v1/comments/65e5428d8fe0435b69f627d0",
+            "method": "DELETE",
+            "sortNum": 180000,
+            "created": "2025-02-18T19:59:22.063Z",
+            "modified": "2025-02-18T20:14:16.126Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2NlYTdiMDI0ZmViNmQzMWMzY2YiLCJpYXQiOjE3MDk1MjYwMDEsImV4cCI6MTcwOTUyOTYwMX0.NNFq1EmbA-HyiSiFCDpDFibgVShSt1P8gqHb-qMw3fI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6b56a01c-1978-481b-8389-a7e06a0e8458",
+            "colId": "e0775a8e-e375-433c-aeb2-faecb2da8739",
+            "containerId": "10e76b00-1526-4e55-a5d1-7d723136841c",
+            "name": "Edit-Comment",
+            "url": "http://localhost:3000/opinionmanager/v1/comments/65e5406ff84a64b88a796688",
+            "method": "PUT",
+            "sortNum": 200000,
+            "created": "2025-02-18T19:59:32.455Z",
+            "modified": "2025-02-18T20:15:05.648Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1M2NiYzdiMDI0ZmViNmQzMWMzYzciLCJpYXQiOjE3MDk1MjY0NzgsImV4cCI6MTcwOTUzMDA3OH0.xeNpitUIFX2bobJ-pYMDvDj6uA9gV-rxUh3PQ2XbQ5I"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"texto\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
